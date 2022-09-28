@@ -10,3 +10,5 @@ This would include the following:
 - Include italicized <em> and bold <strong> elements.
 - Insert pictures <img> with the proper attributes <src> <alt>.
 - Create relative and/or absolute links <a href>.
+
+Hopefully if you are reading this it turned out ok!
