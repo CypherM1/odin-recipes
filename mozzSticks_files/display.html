@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0190)https://allrecipes.assistpub.com/display.html?_otarOg=https%3A%2F%2Fwww.allrecipes.com&_cpub=AAXV53D7Q&_csvr=092308_449&_cgdpr=0&_cgdprconsent=1&_cusp_status=1&_ccoppa=0&_ositekey_disabled=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+
+        function fireErrorLog(logId) {
+            let errorLog = "";
+            const logToFire = errorLog + logId;
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (!isPrefetchIframe(iframeParams.type) && errorLog.indexOf("AAXUJ5L2F") > -1) {
+                        (new Image()).src = logToFire;
+                    }
+                } catch (e) {
+                    (new Image()).src = "https://l3.aaxads.com/log?___stu13p=1j1i1g49bxe3odqe1gncqvgbtbu1qf26wycb&lwbsh=AAX&oyo=1&qdph=PCH_DISPLAY_ERROR";
+                }
+            }
+        }
+
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+            script.onerror = (event) => {
+                window.console.log(event);
+                fireErrorLog("_3");
+            };
+        }
+
+        window.aax = window.aax || {};
+        fireErrorLog("_1");
+        window.aax["__conf"] = {"tarOg":"https://www.allrecipes.com","sitekey_disabled":"1","referer":"https://www.allrecipes.com/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxd.js?pub=AAXV53D7Q&svr=092308_449&gdpr=0&gdprconsent=1&usp_status=1&coppa=0");
+        loadScript(scriptUrl);
+        fireErrorLog("_2");
+    </script>
+</head>
+<body marginwidth="0" marginheight="0">
+
+</body></html>
